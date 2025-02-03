@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useAuth } from '../context/AuthContext'
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const user = '';
+    const user = useAuth();
 
     return (
         <>
-            <div className='flex justify-between items-center p-6 bg-gradient-to-r from-background to-cardBackground text-xl fixed top-0 left-0 right-0 z-50'>
+            <div className='flex justify-between items-center p-6 bg-cardBackground text-xl fixed top-0 left-0 right-0 z-50'>
                 <div className='font-bold text-2xl'>
                     <h1 className='text-secondary hidden lg:block'>EliteHub</h1>
                 </div>
