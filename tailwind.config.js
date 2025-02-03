@@ -7,7 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    colors: {},
+    colors: {
+      primary: "#21419c",        // Azul profundo con un tono vibrante
+      secondary: "#7823c4",      // Púrpura llamativo para resaltar detalles
+      tertiary: "#0EA5E9",       // Azul turquesa vibrante para mayor uso en la UI    
+      accent: "#FACC15",         // Amarillo dorado para resaltar elementos clave
+      background: "#0F172A",     // Azul oscuro grisáceo para un fondo elegante
+      cardBackground: "#1E293B", // Fondo para tarjetas y secciones destacadas
+      textPrimary: "#F8FAFC",    // Blanco suave para textos principales
+      textSecondary: "#94A3B8",  // Gris azulado para textos secundarios
+      border: "#405066",         // Gris azulado oscuro para bordes sutiles
+      highlight: "#14B8A6",      // Verde azulado para elementos interactivos
+      error: "#DC2626",          // Rojo intenso para errores o advertencias
+      success: "#16A34A",        // Verde vibrante para acciones exitosas
+      warning: "#EAB308",        // Amarillo oscuro para alertas
+    }
   },
   plugins: [],
 }
+
