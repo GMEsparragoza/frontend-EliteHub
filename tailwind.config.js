@@ -16,11 +16,13 @@ module.exports = {
       cardBackground: "#1E293B", // Fondo para tarjetas y secciones destacadas
       textPrimary: "#F8FAFC",    // Blanco suave para textos principales
       textSecondary: "#94A3B8",  // Gris azulado para textos secundarios
-      border: "#405066",         // Gris azulado oscuro para bordes sutiles
+      border: "#697b94",         // Gris azulado oscuro para bordes sutiles
       highlight: "#14B8A6",      // Verde azulado para elementos interactivos
-      error: "#DC2626",          // Rojo intenso para errores o advertencias
+      error: "#e31717",          // Rojo intenso para errores o advertencias
+      detailsError: '#b03e3e',   // Rojo Suave para detalles de errores
       success: "#16A34A",        // Verde vibrante para acciones exitosas
       warning: "#EAB308",        // Amarillo oscuro para alertas
+      black: "#000",             // Negro para ciertos aspectos visuales
     }
   },
   plugins: [],
