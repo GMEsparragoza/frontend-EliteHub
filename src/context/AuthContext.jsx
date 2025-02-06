@@ -9,7 +9,7 @@ export const AuthContext = createContext();
 const fetchUserData = async () => {
     try {
         const res = await axios.post(`${REACT_APP_BACKEND_API_URL}/auth/verify-auth`, {}, { withCredentials: true });
-        return res.data || null; // Evita undefined
+        return res.data.user || null; // Evita undefined
     } catch (error) {
         return null; // Devolvemos null en caso de error
     }
@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }) => {
     });
 
     return (
-        <AuthContext.Provider value={{ user: user || {}, isLoading, error, refetchUser: refetch }}>
+        <AuthContext.Provider value={{ user: user, isLoading, error, refetchUser: refetch }}>
             {children}
         </AuthContext.Provider>
     );

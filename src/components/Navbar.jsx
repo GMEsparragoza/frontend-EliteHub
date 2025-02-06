@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext'
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const user = useAuth();
+    const {user} = useAuth();
 
     return (
         <>

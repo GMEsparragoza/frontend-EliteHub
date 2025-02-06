@@ -2,9 +2,16 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { LoginForm } from '../components/LoginForm';
 import { RegisterForm } from '../components/RegisterForm';
+import { useAuth } from '../context/AuthContext';
+import { Navigate } from 'react-router-dom';
 
 const LoginPage = () => {
     const [toggleForm, setToggleForm] = useState(false);
+    const { user } = useAuth();
+
+    if (user) {
+        return <Navigate to="/" replace />;
+    }
 
     return (
         <>
